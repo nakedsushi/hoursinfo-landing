@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  border-bottom: 1px solid #85918E;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.column--small {
+  max-width: 40%;
+}
+
+.column--image {
+  text-align: center;
+  background-color: black;
+  background: url(dark-eating-floor-734562.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.column--content {
+  background-color: #C6D8D3;
+}
+
+.content {
+  padding: 5rem 5rem 3rem 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.text {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.cta {
+  margin: 4rem;
+  text-align: center;
+}
+
+.join {
+  margin-bottom: 0;
+}
+
+.action {
+  text-transform: uppercase;
+  min-width: 5em;
+  font-size: .9rem;
+  height: 4em;
+  line-height: 4em;
+  border-radius: 2rem;
+  display: inline-block;
+  padding: 0 4em;
+  border: 1px solid #3A3335;
+  text-align: center;
+  cursor: pointer;
+}
+
+.action:hover {
+  border-color: #197BBD;
+  color: #197BBD;
+}
+
+.form--content {
+  font-size: 1.5rem;
+  margin: 4rem;
+  padding: 4rem;
+  border: 1px solid #d3d3d3;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  text-align: center;
+}
+
+input:focus {
+  border-color: #197BBD;
+}
+
+input.site_name {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+input {
+  font-size: 1rem;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #d3d3d3;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #d3d3d3;
+}
+
+::placeholder {
+  color: #d3d3d3;
+}
+
+.form--row {
+  margin-top: 3rem;
+}
+
+#email-invalid {
+  color: red;
+  display: none;
+  font-size: 1rem;
+}
+
+#thanks {
+  display: none;
+}
+
+.submitting {
+  display: none;
+}
