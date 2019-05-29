@@ -5,6 +5,7 @@
   <link href="main.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="javascript.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
 <body>
   <div class="page">
@@ -39,10 +40,10 @@
             </h2>
             <form class="form--content" id="waitlist">
               <div class="form--row">
-                https://<input type="text" name="site_name" placeholder="professor-pizza" size="30" class="site_name" id="sitename"/><label for="sitename">.hoursandinfo.com</label>
+                <span class="http">https://</span><input type="text" name="site_name" placeholder="professor-pizza" size="30" class="input_text site_name" id="sitename"/><label for="sitename" class="domain">.hoursandinfo.com</label>
               </div>
               <div class="form--row">
-                <label for="email">email:</label> <input type="text" name="contact" placeholder="your@email.com" size="30" id="email"/><span id="email-invalid">invalid</span>
+                <label for="email">email:</label> <input type="text" class="input_text" name="contact" placeholder="your@email.com" size="30" id="email"/><span id="email-invalid">invalid</span>
               </div>
               <div class="cta join">
                 <button class="action" type="submit" id="submit--button">join waitlist</a>

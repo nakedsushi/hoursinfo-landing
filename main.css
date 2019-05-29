@@ -42,7 +42,6 @@ a {
   background-size: cover;
 }
 
-
 .column--content {
   background-color: #C6D8D3;
 }
@@ -149,4 +148,35 @@ input {
 
 .submitting {
   display: none;
+}
+
+
+@media screen and (max-width: 640px){
+
+  .column {
+    flex-direction: row;
+    flex: 0 0 100%;
+  }
+
+  .column--image {
+    flex-direction: row;
+  }
+
+  .form--content {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .cta {
+    margin: 4rem 0;
+  }
+
+  .http {
+    display: none;
+  }
+
+  .form--row {
+    font-size: 1rem;
+  }
 }
