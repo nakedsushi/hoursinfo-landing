@@ -13,16 +13,17 @@ $(document).ready(function() {
   $form.submit(function(e) {
     e.preventDefault();
     if (emailIsValid($('#email').val())) {
-      $('.pre-submit').fadeOut();
-      $('.submitting').fadeIn();
+      $('.pre-submit').hide();
+      $('.explanation').fadeOut();
+      $('.submitting').show();
       var jqxhr = $.ajax({
         url: url,
         method: "GET",
         dataType: "json",
         data: $form.serialize(),
         success: function() {
-          $('.submitting').fadeOut();
-          $('#thanks').fadeIn();
+          $('.submitting').hide();
+          $('#thanks').show();
         }
       });
     } else {
