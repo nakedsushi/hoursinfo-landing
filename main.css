@@ -166,6 +166,10 @@ input {
     padding: 0 2rem 2rem 2rem;
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
   h2 {
     font-size: 1.6rem;
   }
@@ -196,5 +200,9 @@ input {
   .form--row {
     font-size: 1rem;
     text-align: center;
+  }
+
+  .input_text {
+    width: 8rem;
   }
 }
