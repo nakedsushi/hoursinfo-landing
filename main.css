@@ -147,6 +147,43 @@ input {
   display: none;
 }
 
+.form--row {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.input_text {
+  width: 8rem;
+}
+
+.form--email {
+  order: 4;
+  background: #dcdcdc;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  padding: 3rem 4rem;
+}
+
+.form--email > form {
+  padding: 1rem;
+}
+
+.form--email input, textarea {
+  display: block;
+  margin: 1rem auto;
+  width: 90%;
+  border: 1px solid gray;
+  font-size: 1rem;
+}
+
+.form--email .input--box {
+  padding: 0.5rem;
+}
+
+.form--email textarea {
+  height: 7rem;
+}
+
 
 @media screen and (max-width: 640px){
 
@@ -155,6 +192,9 @@ input {
     flex-direction: column;
   }
 
+  .container--child {
+    padding: 2rem;
+  }
   .leader--image {
     height: 400px;
     background: url(dark-eating-floor-horizontal.jpg);
@@ -175,7 +215,6 @@ input {
   }
   .pre-submit {
     order: 4;
-    padding: 2rem;
   }
 
   .submitting, #thanks {
@@ -204,5 +243,30 @@ input {
 
   .input_text {
     width: 8rem;
+  }
+
+  .form--email {
+    order: 4;
+    background: #dcdcdc;
+  }
+
+  .form--email > form {
+    padding: 1rem;
+  }
+
+  .form--email input, textarea {
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+    border: 1px solid gray;
+    font-size: 1rem;
+  }
+
+  .form--email .input--box {
+    padding: 0.5rem;
+  }
+
+  .form--email textarea {
+    height: 7rem;
   }
 }

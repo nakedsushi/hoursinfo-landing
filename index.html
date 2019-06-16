@@ -27,7 +27,7 @@
 
   <div class="leader--image"></div>
 
-  <div class="pre-submit">
+  <div class="pre-submit container--child">
     <h2 id="start">
       Join the wait list to reserve your custom name before launch.
     </h2>
@@ -41,13 +41,29 @@
         <input type="email" class="input_text" name="contact" placeholder="your@email.com" size="30" id="email"/><span id="email-invalid">invalid</span>
       </div>
       <div class="cta join">
-        <button class="action" type="submit" id="submit--button">join waitlist</a>
+        <button class="action" type="submit" id="submit--button">join waitlist</button>
       </div>
     </form>
   </div>
   <div class="submitting">joining...</div>
   <div id="thanks" class="text">
     Thanks! Stay tuned for updates via email.
+  </div>
+
+  <div class="form--email container--child">
+    <h2>Questions?</h2>
+    <form action="https://mailthis.to/hoursandinfo"
+          method="POST" encType="multipart/form-data">
+      <input class="input--box" type="text" name="name" placeholder="your name">
+      <input class="input--box" type="email" name="_replyto" placeholder="your email">
+      <textarea class="input--box" name="message" placeholder="Your questions or comments here. I will be able to reply personally
+via email."></textarea>
+      <input type="hidden" name="_subject" value="Contact form submitted">
+      <input type="hidden" name="_after" value="http://hoursandinfo.com/">
+      <input type="hidden" name="_honeypot" value="">
+      <input type="hidden" name="_confirmation" value="">
+      <input type="submit" value="SEND" class="action">
+    </form>
   </div>
 </div>
 
