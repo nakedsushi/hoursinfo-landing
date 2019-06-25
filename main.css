@@ -5,6 +5,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  color: #1c1f1e;
 }
 
 a {
@@ -47,13 +48,15 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.2;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 2rem;
-  line-height: 1.2;
+  font-weight: 400;
+  color: #313433;
 }
 
 .text {
@@ -93,7 +96,8 @@ h2 {
   font-size: 1.5rem;
   margin: 4rem;
   padding: 4rem;
-  border: 1px solid #d3d3d3;
+  box-shadow: 2px 4px 7px 0 #b1c0bb;
+  border-radius: 10px;
 }
 
 input {
@@ -206,13 +210,6 @@ input {
     order: 3;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
   .pre-submit {
     order: 4;
   }
@@ -224,7 +221,7 @@ input {
 
   .form--content {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     border: 0;
   }
 
