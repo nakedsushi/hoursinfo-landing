@@ -13,7 +13,9 @@ $(document).ready(function() {
   $form.submit(function(e) {
     e.preventDefault();
     if (emailIsValid($('#email').val())) {
+      $('.leader__image').hide();
       $('.pre-submit').hide();
+      $('.text').hide();
       $('.explanation').fadeOut();
       $('.submitting').show();
       var jqxhr = $.ajax({

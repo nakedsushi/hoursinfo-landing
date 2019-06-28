@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>Hours and Info -- Reservation form</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto:400,500,700&display=swap" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="javascript.js"></script>
@@ -11,41 +11,43 @@
 <body>
 <div class="container">
   <div class="explanation">
-    <h1>Easy, responsive, searchable sites.</h1>
-    <h2>
-      <p>Opening a restaurant is hard work.</p>
-      <p>Building your restaurant's site shouldn't be.</p>
-    </h2>
-    <div class="cta">
-      <a href="#start" class="action">get started</a>
+    <h1 class="title shadow">Free & simple site hosting for your restaurant.</h1>
+    <div class="center" id="getStarted">
+      <a href="#start" class="button button--primary">Get Started</a>
     </div>
-    <div class="text">
-      If you can fill out a form, you can create a site with the important
-      information your customers are looking for. (It takes less time than it took you to read this.)
+    <div class="subtitle shadow">
+      Opening a restaurant is hard.<br />
+      Building your restaurant's site shouldn't be.
     </div>
+    <div class="subtext">
+      Fill out a form and create a site within minutes. It will probably take less time than it took you to read up to this point.
+    </div>
+
+  </div>
+  <div class="leader__image">
   </div>
 
-  <div class="leader--image"></div>
+  <div class="text higher">
+    Fill out a form and create a site within minutes. It takes less time than it took you to read this.
+  </div>
 
   <div class="pre-submit container--child">
     <h2 id="start">
       Join the wait list to reserve your custom name before launch.
     </h2>
-    <form class="form--content" id="waitlist">
+    <form class="form--content center" id="waitlist">
       <div class="form--row">
-        <span class="http">https://</span><input type="text" name="site_name" placeholder="pizzatown" size="30" class="input_text site_name" id="sitename"/><label for="sitename" class="domain">.hoursandinfo.com</label>
+        <input type="text" name="site_name" placeholder="pizzatown" size="30" class="input_text site_name" id="sitename"/><label for="sitename" class="domain">.hoursandinfo.com</label>
       </div>
       <div class="form--row">
-        I'll email you when we're up and running.
-        <br>
-        <input type="email" class="input_text" name="contact" placeholder="your@email.com" size="30" id="email"/><span id="email-invalid">invalid</span>
+        <input type="email" class="input_text input__email" name="contact" placeholder="yourEmail@email.com" id="email"/>
       </div>
-      <div class="cta join">
-        <button class="action" type="submit" id="submit--button">join waitlist</button>
+      <div class="center">
+        <button class="button button--primary" type="submit" id="submit--button">Join Waitlist</button>
       </div>
     </form>
   </div>
-  <div class="submitting">joining...</div>
+  <div class="text submitting">joining...</div>
   <div id="thanks" class="text">
     Thanks! Stay tuned for updates via email.
   </div>
@@ -53,16 +55,18 @@
   <div class="form--email container--child">
     <h2>Questions?</h2>
     <form action="https://mailthis.to/hoursandinfo"
-          method="POST" encType="multipart/form-data">
+          method="POST" encType="multipart/form-data" class="container__input--box">
       <input class="input--box" type="text" name="name" placeholder="your name">
       <input class="input--box" type="email" name="_replyto" placeholder="your email">
-      <textarea class="input--box" name="message" placeholder="Your questions or comments here. I will be able to reply personally
+      <textarea class="input--box input--message" name="message" placeholder="Your questions or comments here. I will be able to reply personally
 via email."></textarea>
       <input type="hidden" name="_subject" value="Contact form submitted">
       <input type="hidden" name="_after" value="http://hoursandinfo.com/">
       <input type="hidden" name="_honeypot" value="">
       <input type="hidden" name="_confirmation" value="">
-      <input type="submit" value="SEND" class="action">
+      <div id="submit--container">
+        <input type="submit" value="SEND" class="button button--tertiary" id="contact--submit">
+      </div>
     </form>
   </div>
 </div>
