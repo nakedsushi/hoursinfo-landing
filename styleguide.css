@@ -123,55 +123,47 @@ h3 {
   background-color: hsl(48, 94%, 68%);
 }
 
-.button--primary {
+button {
   border-width: 2px;
-  border-color: hsl(320, 100%, 19%);
   border-radius: 8px;
-  color: hsl(214, 15%, 91%);
-  background: hsl(320, 100%, 19%);
   display: inline-block;
   font-size: 16px;
-  padding: 16px 16px;
+  margin: 0 16px;
+  padding: 12px 16px;
   font-weight: 700;
   font-family: 'Lato', sans-serif;
 }
 
-.button--primary:hover {
+button:hover {
   cursor: pointer;
+}
+
+.button--primary {
+  border-color: hsl(320, 100%, 19%);
+  color: hsl(214, 15%, 91%);
+  background: hsl(320, 100%, 19%);
+}
+
+.button--primary:hover {
   background: hsl(322, 93%, 27%);
 }
 
 .button--secondary {
-  border-width: 2px;
   border-color: hsl(338, 100%, 86%);
-  border-radius: 8px;
   color: hsl(320, 100%, 19%);
   background-color: hsl(338, 100%, 86%);
-  display: inline-block;
-  font-size: 16px;
-  padding: 16px 16px;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
 }
 
 .button--secondary:hover {
-  cursor: pointer;
-  color: hsl(322, 93%, 27%);
+  border-color: hsl(341, 100%, 95%);
+  background: hsl(341, 100%, 95%);
 }
 
 .button--tertiary {
   border-color: hsl(338, 100%, 96%);
-  border-radius: 8px;
-  border-width: 2px;
   color: hsl(320, 100%, 19%);
-  display: inline-block;
-  font-size: 16px;
-  padding: 16px 16px;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
 }
 
 .button--tertiary:hover {
-  cursor: pointer;
-  border-color: hsl(334, 86%, 67%);
+  border-color: hsl(338, 100%, 86%);
 }
